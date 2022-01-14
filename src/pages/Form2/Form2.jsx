@@ -2,6 +2,8 @@ import { Row, Col, Input, Form, Button, DatePicker, Select, InputNumber } from "
 import {
   Link
 } from "react-router-dom";
+import { IconContext } from "react-icons";
+import { BiArrowBack } from "react-icons/bi";
 import logoForm from "../../../src/assets/logo.png";
 
 function Form1() {
@@ -260,6 +262,19 @@ function Form1() {
   ];
   return (
     <div>
+      <Link to={"/"}>
+        <IconContext.Provider value={{ color: "#6D775C", size: 40 }}>
+          <span className="th" style={{
+            position: "fixed",
+            zIndex: 10000,
+            bottom: 0,
+            left: 0,
+            padding: 20
+          }}>
+            <BiArrowBack />
+          </span>
+        </IconContext.Provider>
+      </Link>
       <Form
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
