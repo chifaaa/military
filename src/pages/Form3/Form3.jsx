@@ -269,7 +269,7 @@ function Form1() {
             zIndex: 10000,
             bottom: 0,
             left: 0,
-            padding: 20
+            padding: 10
           }}>
             <BiArrowBack />
           </span>
